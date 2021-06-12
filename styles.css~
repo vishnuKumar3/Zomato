@@ -11,7 +11,7 @@ src:url('font/SourceSansPro-ExtraLight.ttf');
 }
 
 /* HEADER PART*/
-#header{display:flex;justify-content:space-between;align-items:center;;height:15%;width:100%;}
+#header{display:flex;justify-content:space-between;align-items:center;height:15%;width:100%;}
 #header #left{display:flex;align-items:center;width:70%;height:80%;justify-content:space-around;}
 #header #left #searchbar{box-shadow:10px 10px 5px rgb(246,246,246);width:80%;height:60%;display:flex;justify-content:space-between;align-items:center;border:1px solid #bbb;border-radius:5px;}
 #header #left #searchbar input{font-family:lightfont;border-radius:10px;height:90%;width:55%;border:none;margin-left:1%;font-size:18px;}
@@ -71,6 +71,7 @@ src:url('font/SourceSansPro-ExtraLight.ttf');
 
 @media only screen and (max-width:1000px){
 /* HEADER RESPONSIVE*/
+#header{10%;}
 #header #left #searchbar select{display:none;}
 #header #right{display:none;}
 #header #left{width:100%;}
@@ -83,7 +84,7 @@ src:url('font/SourceSansPro-ExtraLight.ttf');
 #header{flex-direction:column;justify-content:start;height:30%;width:100%;}
 
 /* TAB RESPONSIVE */
-
+#tab{height:5%;}
 #tab #icons{display:none;}
 #tabBottom{display:none;}
 

@@ -1,0 +1,10 @@
+1.Almost added same fonts,colours and dimensions
+2.Made the website as responsive which looks good in allmost all screens
+3.Implemented the navigation bar
+4.Implemented the footer
+5.Implemented cards as it is in whe website
+6.Search functionality also added within the static data I took in objects of js
+7.Some filtration also added Like when you click on any filters mentioned beside of filters box you will get filtered cards as per data I placed.For to come out of that filtration click the button again
+8.Deployed in heroku and I submitted the heroku link also
+9.I also submitted the repo link and also I made it as private
+10.Title also changes as per the location if we take data from backend source
