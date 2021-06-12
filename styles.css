@@ -1,0 +1,104 @@
+
+*{font-family:sans-serif;}
+body,html{height:100%;padding:0px 2% 0% 2%;}
+@font-face{
+font-family:lightfont;
+src:url('font/SourceSansPro-Light.ttf');
+}
+@font-face{
+font-family:extralightfont;
+src:url('font/SourceSansPro-ExtraLight.ttf');
+}
+
+/* HEADER PART*/
+#header{display:flex;justify-content:space-between;align-items:center;;height:15%;width:100%;}
+#header #left{display:flex;align-items:center;width:70%;height:80%;justify-content:space-around;}
+#header #left #searchbar{box-shadow:10px 10px 5px rgb(246,246,246);width:80%;height:60%;display:flex;justify-content:space-between;align-items:center;border:1px solid #bbb;border-radius:5px;}
+#header #left #searchbar input{font-family:lightfont;border-radius:10px;height:90%;width:55%;border:none;margin-left:1%;font-size:18px;}
+#header #left #searchbar select{font-family:lightfont;border-radius:10px;height:90%;width:40%;border:none;margin-right:0.5%;margin-left:1%;background:white;font-size:18px;}
+#header #right{font-family:lightfont;font-size:18px;display:flex;align-items:center;width:15%;height:80%:border:1px solid red;justify-content:space-around;}
+
+/* TAB PART*/
+#tab{height:10%;display:flex;align-items:center;}
+#tab #icons{width:6%;height:100%;border-radius:100%;background:rgb(229,243,243);margin-right:1%;display:flex;justify-content:center;align-items:center;}
+#tab p{margin-right:3%;}
+#tab img{width:60%;height:60%;}
+
+/* TABBOTTOM PART*/
+#tabBottom{width:100%;height:15%;display:flex;align-items:center;justify-content:flex-start;}
+#tabBottom button{transition:1s;border:1px solid rgb(207,207,207);display:flex;align-items:center;margin-right:1%;border-radius:10px;padding:1% 2%;height:50%;background:white;font-family:extralightfont;font-size:17px;}
+#tabBottom button:hover{background:rgb(207,207,207);transition:1s;cursor:pointer;}
+
+
+/* CARD PART*/
+#card{width:30%;height:40%;border-radius:10px;padding-bottom:5%;margin-right:3%;}
+#card li{list-style-type:none;}
+#card #img{border-radius:10px 10px 0px 0px;width:100%;height:60%;}
+#card #heading{font-weight:500;font-size:20px;word-spacing:2px;margin-top:3%;}
+#card #ratingBox{display:flex;height:7%;width:100%;align-items:center;}
+#card #leftBox{display:flex;width:45%;height:70%;justify-content:space-between;align-items:center;}
+#card .rating{border:1px solid red;width:12%;height:100%;background:red;border-radius:3px;display:flex;justify-content:center;align-items:center;}
+#card #rightBox{width:55%;height:90%;}
+#card #delivery{font-family:extralightfont;font-size:17px;margin-left:5%;}
+#card #details1{white-space:nowrap;font-family:lightfont;font-size:18px;text-overflow:ellipsis;overflow:hidden;}
+#card #details2{font-family:lightfont;font-size:18px;}
+#card #details3{font-family:extralightfont;font-size:20px;}
+
+#mainBody{display:flex;justify-content:flex-start;flex-wrap:wrap;width:100%;height:150%;margin-top:2%;}
+
+/* FOOTER PART*/
+#footer{height:50%;}
+#footer #footertop{height:20%;display:flex;justify-content:space-between;align-items:center;}
+#footer #footertop #right{display:flex;justify-content:space-between;width:30%;height:100%;}
+#footer #footertop #right select{width:45%;height:70%;border-radius:5px;background:white;font-size:20px;}
+#footer #footerbottom{height:80%;padding-top:2%;width:90%;display:flex;justify-content:space-between;align-items:flex-start;}
+#footer #footerbottom .division{display:flex;flex-direction:column;height:50%;}
+#footer #footerbottom .division h2{font-family:lightfont;font-size:17px;letter-spacing:2px;font-variant:small-caps;}
+#footer #footerbottom .division a{text-decoration:none;font-size:17px;margin-bottom:2%;font-family:extralightfont;color:black;}
+#footer #footerbottom .division #icon{display:flex;width:60%;justify-content:space-between;align-items:center;}
+#footer #footerbottom .division #icon i{font-size:25px;}
+#footer #footerbottom .division #icon div:nth-child(3){width:30%;height:100%;border-radius:5px;background:black;display:flex;justify-content:center;align-items:center;}
+#footer #footerbottom .division:nth-child(5){width:15%;}
+#footer #footerbottom .division:nth-child(5) #store{width:70%;height:40%;margin-top:10%;}
+
+@media only screen and (min-width:1500px){
+#footer{height:35%;}
+#tabBottom button{height:30%;}
+#tab #icons{height:50%;width:3%;}
+#header #left #searchbar{height:40%;}
+}
+
+
+@media only screen and (max-width:1000px){
+/* HEADER RESPONSIVE*/
+#header #left #searchbar select{display:none;}
+#header #right{display:none;}
+#header #left{width:100%;}
+#header #left{flex-direction:column;align-items:start;}
+#header #left #searchbar{width:100%;height:30%;}
+#header #left #searchbar i{display:none;}
+#header #left #searchbar img{display:none;}
+#header #left #searchbar p{display:none;}
+#header #left #searchbar input{width:100%;height:90%;font-size:15px;}
+#header{flex-direction:column;justify-content:start;height:30%;width:100%;}
+
+/* TAB RESPONSIVE */
+
+#tab #icons{display:none;}
+#tabBottom{display:none;}
+
+/* CARD RESPONSIVE*/
+#card{width:90%;margin-bottom:5%;}
+
+/*MAIN BODY RESPONSIVE*/
+#mainBody{height:auto;}
+
+/*FOOTER RESPONSIVE*/
+#footer{width:100%;}
+#footer #footertop{height:auto;width:100%;flex-direction:column;align-items:start;}
+#footer #footertop #right{width:100%;}
+#footer #footertop #right select{width:45%;font-family:10px;}
+#footer #footerbottom{height:auto;flex-direction:column;justify-content:flex-start;align-items:flex-start;}
+#footer #footerbottom .division:nth-child(5){width:100%;padding-bottom:20%;}
+#footer #footerbottom .division #icon{width:40%;}
+}
